@@ -41,3 +41,8 @@ coverage/
 # OS files
 Thumbs.db
 Desktop.ini
+
+# Image directories (handled by gh-pages deployment)
+volume-*/images/
+public/volume-*/images-webp/
+public/volume-*/images-thumbs/

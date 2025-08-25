@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/things/',
   server: {
     fs: {
       // Allow serving files from project root to access volume folders

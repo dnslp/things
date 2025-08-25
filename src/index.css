@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Search and Filter Controls */
+.search-bar {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #6366f1;
+}
+
+/* Tag Filters */
+.tag-filters {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+
+.filter-label,
+.control-label {
+  display: inline-block;
+  margin-right: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.tag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tag-chip {
+  padding: 0.4rem 0.8rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tag-chip:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.tag-chip.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+.tag-chip.clear {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+/* Grouping and Sort Controls */
+.grouping-controls,
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.grouping-controls button,
+.sort-controls button {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.grouping-controls button:hover,
+.sort-controls button:hover {
+  background: #f0f0f0;
+}
+
+.grouping-controls button.active,
+.sort-controls button.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* Category Icons */
+.category-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
